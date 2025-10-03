@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Excel's Portfolio</title>
+   <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<header style="background-color: rgb(203, 241, 245);">
+   <h2>Excel Aibangbee</h2>
+   <a href="Home.html">Home</a>
+   <a href="AboutMe.html">About Me</a>
+   <a href="projects.html">Projects</a>
+   <a href="ContactMe.html">Contact Me</a>
+   <hr>
+
+</header>
+
+<h1>Contact Page</h1>
+<!--Contact page-->
+<!--
+Form that visitor can contact me by filling
+Apply validation rules (name, email, phone #, message, and submit button)
+Add email for contact and copyright
+Use semantic tags (header, footer, nav, article, etc.)
+-->
+
+<!--Form-->
+<form action="index.php" method="get" enctype="text/plain">
+   <!--Information Gathering-->
+   <label for="Full Name">Full Name:</label>
+   <br>
+   <input type="text" id="Full Name" placeholder="John Doe">
+   <br>
+   <label for="Email">Email:</label>
+   <br>
+   <input type="text" id="Email" placeholder="johndoe@gmail.com" required>
+   <br>
+   <label for="Phone Number">Phone Number:</label>
+   <br>
+   <input type="text" id="Phone Number" placeholder="123-456-7890" required maxlength="17" minlength="3"> <!--longest phone number is 17 digits (North Korea) and shortest is 3 (New Zealand). This is also why I didn't use the "pattern" attribute-->
+   <br>
+   <!--Dropdown Menu-->
+   <label for"Reason">Reason:</label>
+   <br>
+   <select>
+      <option value="Questions">Questions</option>
+      <option value="Concerns">Concerns</option>
+      <option value="Business Inquiries">Business Inquiries</option>
+      <option value="Personal Inquiries">Personal Inquiries</option>
+      <option value="Other">Other</option>
+   </select>
+   <br>
+   <label for="Message">Message:</label>
+   <br>
+   <textarea id="Message" rows="3" cols="25" required placeholder="Enter message"></textarea>
+   <br>
+   <!--Reset and Submit Buttons-->
+   <br>
+   <input type="reset">
+   <br>
+   <input type="submit">
+</form>
+
+<!--{DONE} Copyright-->
+<br>
+<hr>
+<footer style="background-color: rgb(0, 0, 0);"> 
+<br>
+<p style="color: white;">2025 Copyright Reserved <br> Author: Excel Aibangbee <br>
+<a href="mailto:excelaibangbee@gmail.com">excelaibangbee@gmail.com</a>
+</p>
+<br>
+</footer>
+</body>
+</html>

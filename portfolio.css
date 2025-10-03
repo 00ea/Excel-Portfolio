@@ -4,8 +4,51 @@ header {
 
 footer {
    background-color: rgb(203, 241, 245);
+   margin-left: 950;
 }
 
 #gray-background {
-   color: white;
+   background-color:  rgba(72, 85, 87);
+   border: 5px solid;
+   margin-right: 950px;
+}
+
+#blue-background {
+   background-color:  rgb(52, 122, 133);
+   border: 5px solid;
+   margin-top: 10px;
+   margin-left: 950px;
+}
+
+form {
+   margin: 5px
+}
+
+.project-gray {
+   border: 5px solid;
+   background-color: rgba(72, 85, 87);
+   margin-right: auto;
+   width: 1000px;
+   height: 150px;
+}
+
+.project-blue {
+   border: 5px solid;
+   background-color: rgb(52, 122, 133);
+   margin-left: auto;
+   width: 1000px;
+   height: 150px;
+}
+
+.right-image {
+   margin-left: 1100px;
+   
+}
+
+.left-image {
+   margin-left: 250px;
+}
+
+#home {
+   margin-left: 50px;
 }

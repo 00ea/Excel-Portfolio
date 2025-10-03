@@ -13,13 +13,20 @@ Contains navigation to other pages
 maybe add a homescreen or something appealing
 -->
 <h1>Home Page</h1>
+<header>
+   <h1>Welcome to Excel's Portfolio</h1>
+   <a href="">Home</a>
+   <a href="">About Me</a>
+   <a href="">Projects</a>
+   <a href="">Contact Me</a>
 
+</header>
 
 <!--About Me page-->
 <!--
-Image of me 
-1 minute intro vid
-(Use HTML-5, display video controls, and poster)
+{DONE} Image of me 
+{DONE} 1 minute intro vid
+{DONE} (Use HTML-5, display video controls, and poster)
 -->
 <h1>About Me Page</h1>
 <p>Hi! My name is Excel. I am a 2nd year student at Ontario Tech University! 
@@ -27,14 +34,16 @@ Image of me
    I'm a pretty chill, introverted guy so if I ever seem awkward, thats why.</p>
 
 <img src="bust.jpeg" alt="Image of Excel" width="104" height="142"> 
-<a href="https://drive.google.com/file/d/1841uTpzUZh_pwaRopkvqrABd3q9dREch/view?usp=sharing">Introduction Video</a> 
+<br>
+<br>
+<video controls="" src="intro vid.mp4" width="500"></video>
 
 
 <!--Projects page-->
 <!--
-About projects/assignments from previous semesters
-Give one heading per project and explain in 2-3 lines
-4-5 Projects
+{DONE} About projects/assignments from previous semesters
+{DONE} Give one heading per project and explain in 2-3 lines
+{DONE} 4-5 Projects
 -->
 <h1>Projects Page</h1>
 
@@ -60,7 +69,7 @@ Give one heading per project and explain in 2-3 lines
    and most of all, problem solving.
 </p>
 
-<!--Project 3-->
+<!--{DONE} Project 3-->
 <h3>Project 3</h3>
 <p>
    This project was one I found really fun to do and it allowed me to really find my love for coding.
@@ -72,7 +81,7 @@ Give one heading per project and explain in 2-3 lines
    it is to code such complex looking things.
 </p>
 
-<!--Project 4-->
+<!--{DONE} Project 4-->
 <h3>Project 4</h3>
 <p>
    A project that I still use till this day would be the grade calculator we were assigned to make in high school.
@@ -93,15 +102,44 @@ Use semantic tags (header, footer, nav, article, etc.)
 -->
 
 <!--Form-->
-<!--
-Name
-Email
-Phone Number
-Comments
--->
+<form action="index.php" method="get" enctype="text/plain">
+   <!--Information Gathering-->
+   <label for="Full Name">Full Name:</label>
+   <br>
+   <input type="text" id="Full Name" placeholder="John Doe">
+   <br>
+   <label for="Email">Email:</label>
+   <br>
+   <input type="text" id="Email" placeholder="johndoe@gmail.com" required>
+   <br>
+   <label for="Phone Number">Phone Number:</label>
+   <br>
+   <input type="text" id="Phone Number" placeholder="123-456-7890" required maxlength="17" minlength="3"> <!--longest phone number is 17 digits (North Korea) and shortest is 3 (New Zealand). This is also why I didn't use the "pattern" attribute-->
+   <br>
+   <!--Dropdown Menu-->
+   <label for"Reason">Reason:</label>
+   <br>
+   <select>
+      <option value="Questions">Questions</option>
+      <option value="Concerns">Concerns</option>
+      <option value="Business Inquiries">Business Inquiries</option>
+      <option value="Personal Inquiries">Personal Inquiries</option>
+      <option value="Other">Other</option>
+   </select>
+   <br>
+   <label for="Message">Message:</label>
+   <br>
+   <textarea id="Message" rows="3" cols="25" required></textarea>
+   <br>
+   <!--Reset and Submit Buttons-->
+   <input type="reset">
+   <br>
+   <input type="submit">
+</form>
 
 <!--{DONE} Copyright-->
-<footer>&copy; 2025 by Excel Aibangbee</footer>
+<br>
+<footer> &copy; 2025 Copyright Reserved <br> Author: Excel Aibangbee <br> excelaibangbee@gmail.com</footer>
 
 
 </body>

@@ -3,10 +3,15 @@ header {
    background: rgba(72, 85, 87); 
    margin: 0;
    padding: 0;
+   min-height: 50px;
 }
 
 footer {
-   background-color: rgba(72, 85, 87); 
+   /* background-image: linear-gradient(black, rgb(72, 85, 87), rgba(203, 241, 245));  */
+   background: black;
+   min-height: 50px;
+   display: table-row;
+   height: 0;
 }
 
 #logo {
@@ -17,13 +22,15 @@ footer {
 }
 
 body {
+   /* background-image: linear-gradient(rgba(203, 241, 245) 5%, rgba(72, 85, 87)); */
    background: rgb(203, 241, 245);
    margin: 0;
-   padding: 0;
+   height: 100%;
+   width: 100%;
+   display: table;
    text-align: center;
+   
 }
-
-
 
 nav {
    width: 100%;
@@ -58,49 +65,79 @@ li a:hover {
 
 /* About Me */
 #gray-background {
-   background-color:  rgba(72, 85, 87);
+   /* background-color:  rgba(72, 85, 87); */
+   background-image: linear-gradient(rgba(72, 85, 87) 65%, rgb(203, 241, 245));
    border: 5px solid;
-   margin-right: 950px;
+   border-color: black;
+   margin-right: auto;
+   width: 1000px;
+   height: 250px;
+   color: rgb(203, 241, 245);
+   padding: 1rem;
+   
 }
 
 #blue-background {
-   background-color:  rgb(52, 122, 133);
+   /* background-color:  rgb(52, 122, 133); */
+   background-image: linear-gradient(rgb(203, 241, 245), rgb(52, 122, 133) 65%);
    border: 5px solid;
-   margin-top: 10px;
-   margin-left: 950px;
+   border-color: black;
+   margin-left: auto;
+   width: 1000px;
+   height: 370px;
+   color: rgb(203, 241, 245);
+   padding: 1rem;
 }
 
 /* Contact Me */
 form {
    text-align: center;
+   font-family: cursive;
+   font-size: larger;
 }
 
 /* Projects */
 .project-gray {
    border: 5px solid;
-   background-color: rgba(72, 85, 87);
+   background-image: linear-gradient(rgba(72, 85, 87) 65%, rgb(203, 241, 245));
+   /* background-color: rgba(72, 85, 87); */
    margin-right: auto;
    width: 1000px;
-   height: 150px;
+   height: 230px;
+   margin-top: 20px;
    position: absolute;
 }
 
 .project-blue {
    border: 5px solid;
-   background-color: rgb(52, 122, 133);
+   background-image: linear-gradient(rgb(203, 241, 245), rgb(52, 122, 133) 65%); 
+   /* background-color: rgb(52, 122, 133); */
    margin-left: auto;
+   margin-top: 20px;
    width: 1000px;
-   height: 150px;
-   position: absolute;
+   height: 230px;
+   /* position: absolute; */
 }
 
 .right-image {
-   margin-left: 1100px;
-   /*position:absolute;*/   
+   margin-left: 900px;
+   margin-top: 0;
+   /* position:absolute; */
    
 }
 
-.left-image {
-   margin-left: 250px;
+p { 
+   color: rgb(203, 241, 245);
+   font-family: cursive;
+   font-size: large;
+   /* color: transparent;
+   background-clip: text; */
 }
 
+h3 {
+   color: rgb(203, 241, 245);
+}
+
+h2 {
+   color: rgb(203, 241, 245);
+}
